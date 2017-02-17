@@ -1,4 +1,5 @@
 import { h, Component, prop } from 'skatejs';
+
 import { Input } from './index';
 
 
