@@ -154,6 +154,10 @@ acorn@^4.0.3, acorn@^4.0.4:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.11.tgz#edcda3bd937e7556410d42ed5860f67399c794c0"
 
+add-stream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/add-stream/-/add-stream-1.0.0.tgz#6a7990437ca736d5e1288db92bd3266d5f5cb2aa"
+
 adm-zip@~0.4.3:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.4.7.tgz#8606c2cbf1c426ce8c8ec00174447fd49b6eafc1"
@@ -1246,6 +1250,13 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed"
 
+conventional-changelog-angular@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-0.1.0.tgz#ac3d4b869878de5ad57726696b21eedd798ae3c7"
+  dependencies:
+    compare-func "^1.3.1"
+    q "^1.4.1"
+
 conventional-changelog-angular@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-1.3.0.tgz#3f64185978aa13ab0954c9e46a78969fd59c6801"
@@ -1265,6 +1276,22 @@ conventional-changelog-codemirror@^0.1.0:
   resolved "https://registry.yarnpkg.com/conventional-changelog-codemirror/-/conventional-changelog-codemirror-0.1.0.tgz#7577a591dbf9b538e7a150a7ee62f65a2872b334"
   dependencies:
     q "^1.4.1"
+
+conventional-changelog-core@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-0.0.2.tgz#795a298de84f8801398cd0fee20fb799a1f02089"
+  dependencies:
+    conventional-changelog-writer "^0.4.1"
+    conventional-commits-parser "^0.1.2"
+    dateformat "^1.0.12"
+    get-pkg-repo "^0.1.0"
+    git-raw-commits "^0.1.2"
+    git-semver-tags "^1.1.0"
+    lodash "^4.0.0"
+    q "^1.4.1"
+    read-pkg "^1.1.0"
+    read-pkg-up "^1.0.1"
+    through2 "^2.0.0"
 
 conventional-changelog-core@^1.3.0:
   version "1.5.0"
@@ -1321,6 +1348,20 @@ conventional-changelog-jshint@^0.1.0:
     compare-func "^1.3.1"
     q "^1.4.1"
 
+conventional-changelog-writer@^0.4.1:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-0.4.2.tgz#ccb03c5ebd17ceb94a236cb80b27f4ef6bee7731"
+  dependencies:
+    compare-func "^1.3.1"
+    conventional-commits-filter "^0.1.0"
+    dateformat "^1.0.11"
+    handlebars "^4.0.2"
+    lodash "^4.0.0"
+    meow "^3.3.0"
+    semver "^5.0.1"
+    split "^1.0.0"
+    through2 "^2.0.0"
+
 conventional-changelog-writer@^1.1.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-1.4.1.tgz#3f4cb4d003ebb56989d30d345893b52a43639c8e"
@@ -1365,12 +1406,31 @@ conventional-commit-types@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-2.1.0.tgz#45d860386c9a2e6537ee91d8a1b61bd0411b3d04"
 
+conventional-commits-filter@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/conventional-commits-filter/-/conventional-commits-filter-0.1.1.tgz#d9d26c7599f89de3d249cba3def7911fc51c0dab"
+  dependencies:
+    is-subset "^0.1.1"
+    modify-values "^1.0.0"
+
 conventional-commits-filter@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/conventional-commits-filter/-/conventional-commits-filter-1.0.0.tgz#6fc2a659372bc3f2339cf9ffff7e1b0344b93039"
   dependencies:
     is-subset "^0.1.1"
     modify-values "^1.0.0"
+
+conventional-commits-parser@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-0.1.2.tgz#4a624010634f02122520ecbaf19ca0ba23120437"
+  dependencies:
+    JSONStream "^1.0.4"
+    is-text-path "^1.0.0"
+    lodash "^3.3.1"
+    meow "^3.3.0"
+    split "^1.0.0"
+    through2 "^2.0.0"
+    trim-off-newlines "^1.0.0"
 
 conventional-commits-parser@^1.0.0:
   version "1.3.0"
@@ -2605,6 +2665,15 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
+get-pkg-repo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/get-pkg-repo/-/get-pkg-repo-0.1.0.tgz#7f04d968564bf9cd2e901810577f84c37f2b03bd"
+  dependencies:
+    hosted-git-info "^2.1.4"
+    meow "^3.3.0"
+    normalize-package-data "^2.3.0"
+    through2 "^2.0.0"
+
 get-pkg-repo@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/get-pkg-repo/-/get-pkg-repo-1.3.0.tgz#43c6b4c048b75dd604fc5388edecde557f6335df"
@@ -2637,6 +2706,16 @@ git-head@1.14.0, git-head@^1.2.1:
   resolved "https://registry.yarnpkg.com/git-head/-/git-head-1.14.0.tgz#be31c107fb8402098561250ef1e9d88842c391b8"
   dependencies:
     git-refs "^1.1.3"
+
+git-raw-commits@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-0.1.2.tgz#2becbdcd3f96ef0b19f16863f7a2f6d9d8ab8369"
+  dependencies:
+    dargs "^4.0.1"
+    lodash.template "^3.6.1"
+    meow "^3.1.0"
+    split2 "^1.0.0"
+    through2 "^2.0.0"
 
 git-raw-commits@^1.1.0:
   version "1.1.2"
@@ -3837,6 +3916,14 @@ lodash._basecreate@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/lodash._basecreate/-/lodash._basecreate-3.0.3.tgz#1bc661614daa7fc311b7d03bf16806a0213cf821"
 
+lodash._basetostring@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lodash._basetostring/-/lodash._basetostring-3.0.1.tgz#d1861d877f824a52f669832dcaf3ee15566a07d5"
+
+lodash._basevalues@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/lodash._basevalues/-/lodash._basevalues-3.0.0.tgz#5b775762802bde3d3297503e26300820fdf661b7"
+
 lodash._bindcallback@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
@@ -3857,9 +3944,13 @@ lodash._isiterateecall@^3.0.0:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz#5203ad7ba425fae842460e696db9cf3e6aac057c"
 
-lodash._reinterpolate@~3.0.0:
+lodash._reinterpolate@^3.0.0, lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+
+lodash._root@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lodash._root/-/lodash._root-3.0.1.tgz#fba1c4524c19ee9a5f8136b4609f017cf4ded692"
 
 lodash.assign@^3.0.0:
   version "3.2.0"
@@ -3892,6 +3983,12 @@ lodash.create@3.1.1:
     lodash._baseassign "^3.0.0"
     lodash._basecreate "^3.0.0"
     lodash._isiterateecall "^3.0.0"
+
+lodash.escape@^3.0.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.escape/-/lodash.escape-3.2.0.tgz#995ee0dc18c1b48cc92effae71a10aab5b487698"
+  dependencies:
+    lodash._root "^3.0.0"
 
 lodash.isarguments@^3.0.0:
   version "3.1.0"
@@ -3941,12 +4038,33 @@ lodash.tail@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.tail/-/lodash.tail-4.1.1.tgz#d2333a36d9e7717c8ad2f7cacafec7c32b444664"
 
+lodash.template@^3.6.1:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-3.6.2.tgz#f8cdecc6169a255be9098ae8b0c53d378931d14f"
+  dependencies:
+    lodash._basecopy "^3.0.0"
+    lodash._basetostring "^3.0.0"
+    lodash._basevalues "^3.0.0"
+    lodash._isiterateecall "^3.0.0"
+    lodash._reinterpolate "^3.0.0"
+    lodash.escape "^3.0.0"
+    lodash.keys "^3.0.0"
+    lodash.restparam "^3.0.0"
+    lodash.templatesettings "^3.0.0"
+
 lodash.template@^4.0.2:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
   dependencies:
     lodash._reinterpolate "~3.0.0"
     lodash.templatesettings "^4.0.0"
+
+lodash.templatesettings@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-3.1.1.tgz#fb307844753b66b9f1afa54e262c745307dba8e5"
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+    lodash.escape "^3.0.0"
 
 lodash.templatesettings@^4.0.0:
   version "4.1.0"
@@ -3966,11 +4084,11 @@ lodash@4.17.2:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
-lodash@^3.0.0, lodash@^3.0.1, lodash@^3.2.0, lodash@^3.6.0:
+lodash@^3.0.0, lodash@^3.0.1, lodash@^3.2.0, lodash@^3.3.1, lodash@^3.6.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0:
+lodash@^4.0.0, lodash@^4.1.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -4079,7 +4197,7 @@ memory-fs@~0.3.0:
     errno "^0.1.3"
     readable-stream "^2.0.1"
 
-meow@^3.3.0, meow@^3.7.0:
+meow@^3.1.0, meow@^3.3.0, meow@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   dependencies:
@@ -6275,6 +6393,12 @@ spdy@^3.3.3, spdy@^3.4.1:
     select-hose "^2.0.0"
     spdy-transport "^2.0.15"
 
+split2@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/split2/-/split2-1.1.1.tgz#162d9b18865f02ab2f2ad9585522db9b54c481f9"
+  dependencies:
+    through2 "~2.0.0"
+
 split2@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/split2/-/split2-2.1.1.tgz#7a1f551e176a90ecd3345f7246a0cfe175ef4fd0"
@@ -6322,6 +6446,17 @@ stacky@^1.3.1:
   dependencies:
     chalk "^1.1.1"
     lodash "^3.0.0"
+
+standard-changelog@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/standard-changelog/-/standard-changelog-0.0.1.tgz#b367266fce05ca39ef2bbc09c0d24ddbd4191891"
+  dependencies:
+    add-stream "^1.0.0"
+    conventional-changelog-angular "^0.1.0"
+    conventional-changelog-core "^0.0.2"
+    lodash "^4.1.0"
+    meow "^3.7.0"
+    tempfile "^1.1.1"
 
 "statuses@>= 1.3.1 < 2", statuses@~1.3.0, statuses@~1.3.1:
   version "1.3.1"
@@ -6549,6 +6684,13 @@ temp@^0.8.1:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
 
+tempfile@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/tempfile/-/tempfile-1.1.1.tgz#5bcc4eaecc4ab2c707d8bc11d99ccc9a2cb287f2"
+  dependencies:
+    os-tmpdir "^1.0.0"
+    uuid "^2.0.1"
+
 test-fixture@PolymerElements/test-fixture:
   version "2.0.1"
   resolved "https://codeload.github.com/PolymerElements/test-fixture/tar.gz/f72f0ff4e83b83b0157afed664f560da91d20f31"
@@ -6569,7 +6711,7 @@ throttleit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/throttleit/-/throttleit-1.0.0.tgz#9e785836daf46743145a5984b6268d828528ac6c"
 
-through2@^2.0.0, through2@^2.0.2:
+through2@^2.0.0, through2@^2.0.2, through2@~2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:

@@ -61,6 +61,7 @@
     "rimraf": "^2.5.4",
     "sass-loader": "^5.0.1",
     "semantic-release": "^6.3.2",
+    "standard-changelog": "^0.0.1",
     "style-loader": "^0.13.1",
     "test-fixture": "^1.0.2",
     "to-string-loader": "^1.1.5",
