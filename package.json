@@ -17,15 +17,18 @@
     "site": "rimraf tmp/site && webpack --env.site --env.element=blaze-elements",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
-    "precommit": "yarn ts:lint && yarn test",
     "toolbelt:generate:configs": "node toolbelt/generate-configs.js",
     "toolbelt:packagelist": "node toolbelt/generate-packages-list.js",
     "cleanup": "rimraf dist && rimraf packages/**/dist",
-    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post"
+    "semantic-release": "lerna-semantic-release pre && git tag 1.2.3 && npm run main-changelog && git add */CHANGELOG.md && lerna-semantic-release publish && lerna-semantic-release post",
+    "main-changelog": "standard-changelog -i CHANGELOG.md -k packages/blaze-elements/package.json -w"
   },
   "repositories": {
     "type": "git",
-    "url": "https://github.com/wc-catalogue/blaze-elements.git"
+    "url": "https://github.com/hopkins-tk/blaze-elements-test.git"
+  },
+  "release": {
+    "branch": "master"
   },
   "dependencies": {
     "blaze": "^3.2.0",
@@ -59,6 +62,7 @@
     "pushstate-server": "^2.1.0",
     "rimraf": "^2.5.4",
     "sass-loader": "^5.0.1",
+    "standard-changelog": "^0.0.1",
     "style-loader": "^0.13.1",
     "test-fixture": "^1.0.2",
     "to-string-loader": "^1.1.5",
