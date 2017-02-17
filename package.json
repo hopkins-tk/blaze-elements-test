@@ -20,15 +20,13 @@
     "toolbelt:generate:configs": "node toolbelt/generate-configs.js",
     "toolbelt:packagelist": "node toolbelt/generate-packages-list.js",
     "cleanup": "rimraf dist && rimraf packages/**/dist",
-    "semantic-release": "lerna-semantic-release pre && git tag 1.2.3 && npm run main-changelog && git add */CHANGELOG.md && lerna-semantic-release publish && lerna-semantic-release post",
-    "main-changelog": "standard-changelog -i CHANGELOG.md -k packages/blaze-elements/package.json -w"
+    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post",
+    "main-changelog": "standard-changelog -i CHANGELOG.md -k packages/blaze-elements/package.json -w",
+    "release": "npm run main-changelog && npm run build"
   },
-  "repositories": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/hopkins-tk/blaze-elements-test.git"
-  },
-  "release": {
-    "branch": "master"
   },
   "dependencies": {
     "blaze": "^3.2.0",
@@ -62,7 +60,7 @@
     "pushstate-server": "^2.1.0",
     "rimraf": "^2.5.4",
     "sass-loader": "^5.0.1",
-    "standard-changelog": "^0.0.1",
+    "semantic-release": "^6.3.2",
     "style-loader": "^0.13.1",
     "test-fixture": "^1.0.2",
     "to-string-loader": "^1.1.5",
